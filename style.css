@@ -11,7 +11,6 @@ h1,
 h2 {
     font-family: "Jost", sans-serif;
     font-weight: bold;
-    text-transform: lowercase;
     letter-spacing: 1px;
     margin-bottom: 0.5em;
 }
