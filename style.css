@@ -2,8 +2,8 @@ body {
     font-family: "IBM Plex Mono", monospace;
     font-size: 18px;
     line-height: 1.5;
-    background-color: #fff;
-    color: #000;
+    background-color: #e6e6e6;
+    color: #111111;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
