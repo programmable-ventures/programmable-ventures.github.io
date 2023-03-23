@@ -7,14 +7,6 @@ body {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Apply dark mode styles if user has enabled it */
-@media (prefers-color-scheme: dark) {
-    body {
-        color: #eee;
-        background-color: #121212;
-    }
-}
-
 h1,
 h2 {
     font-family: "League Spartan", sans-serif;
@@ -59,4 +51,37 @@ a {
     margin: 0 auto;
     padding: 1.5em;
     border-radius: 4px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Apply dark mode styles if user has enabled it */
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #eee;
+        background-color: #121212;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .content-block {
+        max-width: 100%;
+        padding: 1em;
+    }
 }
