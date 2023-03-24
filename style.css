@@ -51,12 +51,18 @@ a {
     border-radius: 4px;
 }
 
+main {
+    padding-top: 100px;
+}
+
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     backdrop-filter: saturate(180%) blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 110px;
 }
 
 /* Apply dark mode styles if user has enabled it */
@@ -83,5 +89,13 @@ header {
     .content-block {
         max-width: 100%;
         padding: 1em;
+    }
+
+    main {
+        padding-top: 80px;
+    }
+
+    header {
+        height: 100px;
     }
 }
