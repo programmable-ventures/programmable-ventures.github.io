@@ -63,6 +63,7 @@ header {
     backdrop-filter: saturate(180%) blur(10px);
     -webkit-backdrop-filter: blur(10px);
     height: 110px;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 /* Apply dark mode styles if user has enabled it */
@@ -70,6 +71,10 @@ header {
     body {
         color: #eee;
         background-color: #121212;
+    }
+
+    header {
+        background: rgba(18, 18, 18, 0.8);
     }
 }
 
