@@ -51,7 +51,7 @@ a {
     border-radius: 4px;
 }
 
-main {
+.content {
     padding-top: 100px;
 }
 
@@ -96,7 +96,7 @@ header {
         padding: 1em;
     }
 
-    main {
+    .content {
         padding-top: 80px;
     }
 
