@@ -13,6 +13,7 @@ h2 {
     font-weight: bold;
     letter-spacing: 1px;
     margin-bottom: 0.5em;
+    transition: height 0.2s ease-out, font-size 0.2s ease-out;
 }
 
 h1 {
@@ -44,6 +45,11 @@ a {
     color: inherit;
 }
 
+.header-block {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .content-block {
     max-width: 800px;
     margin: 0 auto;
@@ -64,6 +70,15 @@ header {
     -webkit-backdrop-filter: blur(10px);
     height: 110px;
     background: rgba(255, 255, 255, 0.8);
+    transition: height 0.2s ease-out, font-size 0.2s ease-out;
+}
+
+header.small {
+    height: 60px;
+}
+
+header.small h1 {
+    font-size: 24px;
 }
 
 /* Apply dark mode styles if user has enabled it */
@@ -74,7 +89,7 @@ header {
     }
 
     header {
-        background: rgba(18, 18, 18, 0.8);
+        background: rgba(19, 19, 19, 0.8);
     }
 }
 

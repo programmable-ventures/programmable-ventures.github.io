@@ -24,7 +24,7 @@
 <body>
     <main>
         <header>
-            <section class="content-block">
+            <section class="header-block">
                 <h1>❯ programmable</h1>
             </section>
         </header>
@@ -86,6 +86,17 @@
             </section>
         </div>
     </main>
+
+    <script type="text/javascript">
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                header.classList.add('small');
+            } else {
+                header.classList.remove('small');
+            }
+        });
+    </script>
 </body>
 
 </html>
