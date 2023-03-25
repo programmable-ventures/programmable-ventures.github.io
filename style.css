@@ -4,7 +4,6 @@ body {
     line-height: 1.5;
     background-color: #fefefe;
     color: #111111;
-    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 h1,
@@ -13,7 +12,6 @@ h2 {
     font-weight: bold;
     letter-spacing: 1px;
     margin-bottom: 0.5em;
-    transition: height 0.2s ease-out, font-size 0.2s ease-out;
 }
 
 h1 {
@@ -45,13 +43,6 @@ a {
     color: inherit;
 }
 
-.header-block {
-    max-width: 800px;
-    margin: 0 auto;
-    border-radius: 4px;
-    padding-left: 1em;
-}
-
 .content-block {
     max-width: 800px;
     margin: 0 auto;
@@ -59,39 +50,11 @@ a {
     border-radius: 4px;
 }
 
-.content {
-    padding-top: 100px;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    backdrop-filter: saturate(180%) blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    height: 110px;
-    background: rgba(255, 255, 255, 0.8);
-    transition: height 0.2s ease-out, font-size 0.2s ease-out;
-}
-
-header.small {
-    height: 60px;
-}
-
-header.small h1 {
-    font-size: 24px;
-}
-
 /* Apply dark mode styles if user has enabled it */
 @media (prefers-color-scheme: dark) {
     body {
         color: #eee;
         background-color: #121212;
-    }
-
-    header {
-        background: rgba(19, 19, 19, 0.8);
     }
 }
 
@@ -111,17 +74,5 @@ header.small h1 {
     .content-block {
         max-width: 100%;
         padding: 1em;
-    }
-
-    .header-block {
-        max-width: 100%;
-    }
-
-    .content {
-        padding-top: 80px;
-    }
-
-    header {
-        height: 100px;
     }
 }
